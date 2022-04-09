@@ -1,0 +1,2 @@
+.upArrow{-webkit-animation:MoveUpDown 1.5s linear infinite;animation:MoveUpDown 1.5s linear infinite;font-size:10rem!important;position:absolute;right:0;top:0}@-webkit-keyframes MoveUpDown{0%,to{top:0}50%{top:50px}}@keyframes MoveUpDown{0%,to{top:0}50%{top:50px}}
+/*# sourceMappingURL=main.563a543d.css.map*/
