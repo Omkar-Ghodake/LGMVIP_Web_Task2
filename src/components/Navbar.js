@@ -4,7 +4,7 @@ import CardDataContext from '../context/CardData/CardDataContext';
 const Navbar = () => {
 
 	const contextCardData = useContext(CardDataContext);
-	const { getData } = contextCardData;
+	const { data, getData } = contextCardData;
 
 	return (
 		<>
@@ -21,9 +21,11 @@ const Navbar = () => {
 							</li>
 						</ul>
 					</div>
-					<button className="btn btn-outline-warning" onClick={getData}>GET</button>
+					{data.length === 0 && <button className="btn btn-outline-warning" onClick={getData}>GET</button>}
 				</div>
 			</nav>
+			<h1 className='text-end mt-5 me-5 px-5 py-3'>Click 'GET' button on navbar to get data.</h1>
+			<span className='upArrow'>&uarr;</span>
 		</>
 	)
 }

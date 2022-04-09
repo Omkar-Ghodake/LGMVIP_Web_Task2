@@ -1,3 +1,21 @@
 img {
 	/* height: 12rem; */
 }
+
+.upArrow {
+	font-size: 10rem !important;
+  animation: MoveUpDown 1.5s linear infinite;
+  position: absolute;
+  right: 0;
+  top: 0;
+	/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 50px;
+  }
+}

@@ -24,7 +24,6 @@ const Cards = () => {
 					})
 				}
 			</div>
-			{console.log(page)}
 			{
 				!(data.length === 0) && <div className="d-flex justify-content-between my-5">
 					<button className="btn btn-outline-primary" disabled={page < 2} onClick={handlePreviousClick}>Previous</button>
